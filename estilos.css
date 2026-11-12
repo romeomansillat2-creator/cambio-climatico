@@ -1,0 +1,263 @@
+:root {
+    --verde-oscuro: #000000;
+    --azul: #df6f3c;
+    
+    --crema: #d89d1d;
+    --tierra: #8d6e63;
+    --celeste: #ffbb00;
+    --texto: #ccb118;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body { 
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-size:cover ;
+    background-position: center;
+    background-image: url("1.jpg");
+}
+
+
+
+
+h2, h3, h4, h5 {
+    display: inline-block;
+    font-size: x-large;
+    font-family: 'Merriweather', serif;
+    color: #191092;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 8px 15px;
+    border-radius: 8px;
+}
+
+
+header {
+   
+    background-color: var(--verde-oscuro);
+    padding: 30px 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #ffffff;
+    margin: 0 0 20px;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 20px;
+}
+
+nav a {
+    display: block;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid var(--verde-claro);
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: var(--celeste);
+    color: var(--verde-oscuro);
+    transform: translateY(-3px);
+    outline: none;
+}
+
+
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+
+
+section {
+
+    background-color:rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);  
+    border-radius: 12px;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(226, 7, 7, 0.1);
+}
+section p,
+section li {
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+
+section li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+
+section h2 {
+    margin-top: 0;
+    border-bottom: 3px solid var(--verde-claro);
+    padding-bottom: 8px;
+}
+
+
+
+li {
+    margin-bottom: 6px;
+}
+
+
+figure {
+    margin: 20px 0 0;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+figcaption {
+    color: #ffffff;
+    text-shadow: 1px 1px 3px #000000;
+}
+    
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid var(--verde-claro);
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--verde);
+    color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--celeste);
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--verde-claro);
+    border-radius: 8px;
+    font-family: inherit;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    color: #000000;
+    box-shadow: 0 0 6px var(--verde-claro);
+    outline: none;
+}
+
+
+button {
+    padding: 12px 20px;
+    color: #c300ff;
+    
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.397);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover,
+button:focus {
+    background-color: var(--verde-oscuro);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 14px rgba(255, 255, 255, 0.35);
+    outline: none;
+}
+
+
+
+footer {
+    background-color: var(--verde-oscuro);
+    color: #ffffffaf;
+    text-align: right;
+    padding: 20px 30px;
+}
+
+footer p {
+    margin: 4px 0;
+}
+
+
+
+@media (max-width: 600px) {
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
